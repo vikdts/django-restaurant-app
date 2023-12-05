@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://sote-app-b9a4427d1b1c.herokuapp.com/', 'localhost',
+ALLOWED_HOSTS = ['sote-app-b9a4427d1b1c.herokuapp.com/', 'localhost',
                  '8000-vikdts-django-restaurant-g4jn7inreb.us2.codeanyapp.com']
 
 
