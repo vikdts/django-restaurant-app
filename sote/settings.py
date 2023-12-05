@@ -31,7 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sote-app.herokuapp.com', 'localhost', '8000-vikdts-django-restaurant-g4jn7inreb.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['sote-app.herokuapp.com', 'localhost',
+                 '8000-vikdts-django-restaurant-g4jn7inreb.us2.codeanyapp.com']
 
 
 # Application definition
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
-    'cloudinary'
+    'cloudinary',
     'restaurant',
 ]
 
