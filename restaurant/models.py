@@ -25,7 +25,7 @@ class Booking(models.Model):
         return f"Booking {self.id} - Date: {self.date}, User: {self.user}"
 
 
-class Reviews(models.Model):
+class Review(models.Model):
     booking = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="reviews")
     stars = models.ForeignKey(
@@ -33,6 +33,7 @@ class Reviews(models.Model):
     content = models.TextField()
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
     approved = models.BooleanField(default=False)
 
     class Meta:
