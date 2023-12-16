@@ -71,10 +71,17 @@
                         <div class="col col-sm-12 col-md-2 col-log-2">
                             <a class="nav-link" href="#findus">FIND US</a>
                         </div>
-            <div class="col col-sm-12 col-md-2 col-log-2">
-                            <a class="nav-link" href="">LOG IN</a>
 
+            {% if user.is_authenticated %}
+            <div class="col col-sm-12 col-md-2 col-log-2">
+                <a class="nav-link" href="{% url 'account_logout' %}">LOGOUT</a>
             </div>
+            {% else %}
+
+            <div class="col col-sm-12 col-md-2 col-log-2">
+                <a class="nav-link" href="{% url 'account_login' %}">LOGIN</a>
+            </div>
+            {% endif %}
 
         </div>
                 <hr class="hr-bottom" />
