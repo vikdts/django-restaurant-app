@@ -44,13 +44,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
-  <body>
+  <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
 
+    <div class="container-fluid main-nav">
         <hr class="hr-top" />
-    <div class="container">
-
         <div class="row nav-row justify-content-center align-items-center text-center">
             <div class="col col-sm-12 col-md-2 col-log-2">
 
@@ -60,7 +59,7 @@
             </a>
             </div>
             <div class="col col-sm-12 col-md-2 col-log-2">
-                            <a class="nav-link" href="#about">ABOUT</a>
+                            <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
             </div>
             <div class="col col-sm-12 col-md-2 col-log-2">
                 <a class="nav-link" href="#menu">MENU</a>
@@ -78,8 +77,9 @@
             </div>
 
         </div>
+                <hr class="hr-bottom" />
     </div>
-        <hr class="hr-bottom" />
+
 
     <!-- Main -->
 
@@ -90,7 +90,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mt-auto">
+        <hr>
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col col-sm-12 col-md-2 col-lg-2">
@@ -101,8 +102,8 @@
             <a class="btn" href="#!"
               ><i class="fab fa-fw fa-facebook-f"></i
             ></a>
-            <a class="btn href="#!"
-              ><i class="fab fa-fw fa-twitter"></i
+            <a class="btn href="#!"><i
+                 class="fab fa-fw fa-twitter"></i
             ></a>
             <a class="btn" href="#!"
               ><i class="fab fa-fw fa-linkedin-in"></i
