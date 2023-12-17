@@ -42,7 +42,7 @@ hr {
 
 body {
     background-color: #ffffff;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
 }
 
 
@@ -58,17 +58,6 @@ footer {
     color: #000000;
 }
 
-/* .link {
-    color: #000000;
-    text-decoration: none;
-} */
-
-/* .link:hover,
-.link:active {
-    color: #808080;
-    text-decoration: underline;
-} */
-
 .main-nav {
     position: fixed;
     background-color: #ffffff;
@@ -79,4 +68,14 @@ main {
 
 .nav-row {
     height: 100px;
+}
+.btn-signup {
+    background-color: #23BBBB;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
 }
